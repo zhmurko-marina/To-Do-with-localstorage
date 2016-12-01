@@ -39,13 +39,6 @@ window.addEventListener('load', function () {
 
 
     document.getElementById('addTask').addEventListener('click', toDoList);
-    document.getElementById('todoInput').addEventListener('keyup', function (event) {
-        //check to see if the enter key was pressed
-        if (event.which === 13) {
-            //if so, run the addTask function
-            toDoList();
-        }
-    });
     function toDoList() {
         var todo = getTasks();
         var item = document.getElementById('todoInput').value;
